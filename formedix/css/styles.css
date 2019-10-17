@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input,
+button {
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cp-flickr-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin-top: 100px;
+}
+
+.cp-flickr-gallery__image {
+    overflow: hidden;
+}
+
+.cp-search-from {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.cp-search-from__input-field {
+    width: 80%;
+    background-color: #eee;
+}
+.cp-search-from__submit {
+    width: 20%;
+}
+.cp-search-from__submit,
+.cp-more-results__button {
+    color: white;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+.cp-more-results__button {
+    display: none;
+    margin: 20px auto;
+}
